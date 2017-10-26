@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+body
+ background: #E3F2FD
+ box-sizing: border-box
+
+nav
+ width: calc(160px * 3)
+ height: 70px
+ background: linear-gradient(180deg, #9479DF, #6F1BFE)
+ //background: #42A5F5
+ margin: calc(50vh - 70px) auto
+ box-shadow: 2px 13px 79px -20px rgba(0,0,0,0.55)
+ position: relative
+ overflow: hidden
+
+ ul
+  padding: 0
+  margin: 0
+  font-size: 0
+  
+ li
+  display: inline-block
+  width: 160px
+  text-align: center
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  color: #fff
+  padding-top: 25px
+  padding-bottom: 25px
+  overflow: hidden
+  cursor: pointer
+  position: relative
+
+  
+.slider
+ display: block
+ width: 160px
+ height: 3px
+ background: #fff
+ padding: 0
+ position: absolute
+ left: 0
+ bottom: 0
+ transition: all 0.4s
+ 
+
+li .ripple 
+ border-radius: 50%
+ background-color: rgba(255, 255, 255, 0.2)
+ position: absolute
+ transform: scale(0)
+ animation: ripple 0.4s linear
+
+
+@keyframes ripple 
+ to 
+  transform: scale(2)
+  opacity: 0
